@@ -1,7 +1,7 @@
 {
     "name": "tarohida/application-exceptions",
     "description": "exceptions for your application",
-    "type": "metapackage",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
