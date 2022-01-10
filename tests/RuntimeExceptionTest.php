@@ -60,4 +60,17 @@ EOT;
             self::assertSame($expected, $e->getLoggingMessage());
         }
     }
+
+    public function test_debug_params_when_params_not_set()
+    {
+        $expected = <<<EOT
+debug params not set
+EOT;
+
+        try {
+            throw new RuntimeExceptionImplementExample('', 0, null, null);
+        } catch (RuntimeException $e) {
+            self::assertSame($expected, $e->getLoggingMessage());
+        }
+    }
 }

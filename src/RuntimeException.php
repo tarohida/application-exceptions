@@ -10,7 +10,7 @@ abstract class RuntimeException extends \RuntimeException
     public function getLoggingMessage(): string
     {
         if (is_null($this->debug_params)) {
-            return 'debug param not set';
+            return $this->getDebugParamNotSetMessage();
         }
         return print_r($this->debug_params, true);
     }
