@@ -3,15 +3,20 @@ declare(strict_types=1);
 
 namespace ApplicationExceptions;
 
-abstract class RuntimeException extends \RuntimeException implements ApplicationExceptionInterface
+abstract class RuntimeException extends \RuntimeException
 {
-    abstract public function getDebugPrint() :string;
-    protected function getDebugPrintedString(mixed $param): string
+    protected $debug_params;
+
+    public function getLoggingMessage(): string
     {
-        return print_r($param, true);
+        if (is_null($this->debug_params)) {
+            return 'debug param not set';
+        }
+        return print_r($this->debug_params, true);
     }
-    protected function getDebugNotImplementedMessage(): string
+
+    protected function getDebugParamNotSetMessage(): string
     {
-        return 'debug not implemented';
+        return 'debug params not set';
     }
 }
