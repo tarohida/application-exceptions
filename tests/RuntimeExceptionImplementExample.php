@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use ApplicationExceptions\RuntimeException;
+use TaroHida\ApplicationExceptions\RuntimeException;
 use Throwable;
 
 class RuntimeExceptionImplementExample extends RuntimeException

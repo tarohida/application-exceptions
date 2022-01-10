@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ApplicationExceptions;
+namespace TaroHida\ApplicationExceptions;
 
 abstract class RuntimeException extends \RuntimeException
 {

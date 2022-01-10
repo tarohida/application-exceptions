@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ApplicationExceptions\\": "src/"
+            "TaroHida\\ApplicationExceptions\\": "src/"
         }
     },
     "autoload-dev": {
