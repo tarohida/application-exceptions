@@ -1,7 +1,7 @@
 {
     "name": "tarohida/application-exceptions",
     "description": "exceptions for your application",
-    "type": "metapackage",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -10,11 +10,11 @@
         }
     ],
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "*"
     },
     "autoload": {
         "psr-4": {
-            "ApplicationExceptions\\": "src/"
+            "TaroHida\\ApplicationExceptions\\": "src/TaroHida/ApplicationExceptions"
         }
     },
     "autoload-dev": {
